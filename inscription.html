@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chuck Form</title>
+</head>
+<body>
+  
+  <form action="sendToMySecondYearInIut.php" method="post">
+    <fieldset>
+      <legend>Informations personnelles</legend>
+      <p>
+        <label for="surname">Nom : *</label>
+        <input tabindex="1" id="surname" name="uname" type="text" required>
+      </p>
+      <p>
+        <label for="firsName">Prénom :</label>
+        <input tabindex="1" id="firstName" name="ufname" type="text">
+      </p>
+      <p>
+        <label for="sexe">Sexe :</label>
+        <input id="sexe" name="sexe" type="radio">H
+        <input id="sexe" name="sexe" type="radio">F
+      </p>
+      <p>
+        <label for="birthDate">Date de naissance :</label>
+        <input id="birthDate" name="birthDate" type="date">
+      </p>
+      <p>
+        <label for="email">Email : *</label>
+        <input tabindex="1" id="email" name="email" type="email" placeholder="yourmail@domain.com" required>
+      </p>
+      <p>
+        <label for="country">Pays d'origine :</label>
+        <select id="country">
+          <option value="us">U.S.A</option> 
+          <option value="fr" selected>France</option>
+          <option value="ch">Chine</option>
+          <option value="vn">Viêt Nam</option>
+        </select>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Les sports de combats</legend>
+      <p>
+        <label for="martialArts">Arts-martiaux préférés :</label>
+        <select id="interet" multiple>
+          <option value="kung">Kung-Fu</option> 
+          <option value="kara">Karaté</option>
+          <option value="fullC">Full-contact</option>
+        </select>
+      </p>
+      <p>
+        <label for="karate">Niveau en Karaté :</label>
+        <input id="karate" name="karate" type="number" min="0" max="5">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Inscription</legend>
+      <p>
+        <label for="messChuck">Message pour Chuck :</label>
+        <textarea name="textarea" id="messChuck" cols="30" rows="10" placeholder="Un inscrit sera tiré au sort, et verra son message transmis à Chuck Norris."></textarea>
+      </p>
+      <p>
+        <label for="password">Mot de passe : *</label>
+        <input tabindex="1" id="password" name="password" type="password" pattern="[a-zA-Z0-9]+" minlength="8" required>
+      </p>
+      <p>
+        <label for="clu">J'ai bien lu les clauses que je n'ai pas lues *</label>
+        <input id="clu" name="clu" type="radio" required>
+      </p>
+      <p>
+        <label for="engage">Niveau d'engagement :</label>
+        <input id="engage" name="engage" type="radio">Basique (5€)
+        <input id="engage" name="engage" type="radio">Gold (15€)
+        <input id="engage" name="engage" type="radio">Tatane in your face (50€)
+      </p>
+    </fieldset>
+    <input type="submit" value="Envoyer">
+  </form>
+  
+</body>
+</html>
